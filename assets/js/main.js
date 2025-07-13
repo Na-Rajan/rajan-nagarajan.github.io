@@ -262,3 +262,50 @@
   document.addEventListener('DOMContentLoaded', initDarkMode);
 
 })();
+
+// Scroll progress indicator
+function initScrollProgress() {
+  const progressBar = document.createElement('div');
+  progressBar.id = 'scroll-progress';
+  progressBar.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: var(--accent-color);
+    z-index: 999999;
+    transition: width 0.1s ease;
+  `;
+  document.body.appendChild(progressBar);
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    progressBar.style.width = scrollPercent + '%';
+  });
+}
+
+// Enhanced smooth scrolling for navigation links
+function initSmoothScrolling() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+}
+
+// Initialize all enhancements
+document.addEventListener('DOMContentLoaded', () => {
+  initDarkMode();
+  initScrollProgress();
+  initSmoothScrolling();
+});
