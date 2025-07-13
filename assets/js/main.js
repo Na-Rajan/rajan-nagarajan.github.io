@@ -231,9 +231,18 @@
     if (enabled) {
       document.body.classList.add('dark-mode');
       localStorage.setItem('darkMode', 'true');
+      updateDarkModeIcon(true);
     } else {
       document.body.classList.remove('dark-mode');
       localStorage.setItem('darkMode', 'false');
+      updateDarkModeIcon(false);
+    }
+  }
+
+  function updateDarkModeIcon(isDark) {
+    const icon = document.getElementById('dark-mode-icon');
+    if (icon) {
+      icon.textContent = isDark ? '☀️' : '🌙';
     }
   }
 

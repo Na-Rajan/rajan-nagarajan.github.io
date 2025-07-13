@@ -69,10 +69,12 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+/* Smooth transitions for dark mode */
 body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -86,10 +88,17 @@ a:hover {
   text-decoration: none;
 }
 
+/* Enhanced focus styles with smooth transitions */
 a:focus, button:focus, input:focus, textarea:focus {
   outline: 2px solid var(--accent-color);
   outline-offset: 2px;
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent-color), transparent 70%);
+  transition: outline 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Smooth transitions for all color changes */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 h1,
@@ -1080,6 +1089,78 @@ section,
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Call to Action Section
+--------------------------------------------------------------*/
+.cta {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.cta h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: var(--default-color);
+}
+
+.cta-buttons {
+  margin-top: 30px;
+}
+
+.cta .btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.cta .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.cta .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.cta .btn-outline-primary {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-color: transparent;
+}
+
+.cta .btn-outline-primary:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+@media (max-width: 768px) {
+  .cta h3 {
+    font-size: 28px;
+  }
+  
+  .cta p {
+    font-size: 16px;
+  }
+  
+  .cta-buttons .btn {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+  }
 }
 
 /*--------------------------------------------------------------
