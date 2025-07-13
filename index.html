@@ -5,12 +5,24 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Index - Dr Rajan Nagarajan Resume</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="AI Product Manager, Resume, Portfolio, Dr Rajan Nagarajan, FinTech, EdTech, Security, Analytics, Product Leader, Author" name="keywords">
+  <meta content="Resume and portfolio of Dr Rajan Nagarajan, AI Product Manager and Author. Explore experience, skills, projects, and contact information." name="description">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Dr Rajan Nagarajan - AI Product Manager Resume & Portfolio">
+  <meta property="og:description" content="Resume and portfolio of Dr Rajan Nagarajan, AI Product Manager and Author. Explore experience, skills, projects, and contact information.">
+  <meta property="og:image" content="https://na-rajan.github.io/rajan-nagarajan.github.io/assets/img/profile-img.jpg">
+  <meta property="og:url" content="https://na-rajan.github.io/rajan-nagarajan.github.io/">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr Rajan Nagarajan - AI Product Manager Resume & Portfolio">
+  <meta name="twitter:description" content="Resume and portfolio of Dr Rajan Nagarajan, AI Product Manager and Author. Explore experience, skills, projects, and contact information.">
+  <meta name="twitter:image" content="https://na-rajan.github.io/rajan-nagarajan.github.io/assets/img/profile-img.jpg">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="manifest" href="manifest.json">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -26,6 +38,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 
   <!-- =======================================================
   * Template Name: MyResume
@@ -48,10 +69,15 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#testimonials"><i class="bi bi-chat-quote navicon"></i><span>Testimonials</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>
+
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode" style="margin: 1rem; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--accent-color);">
+      <span id="dark-mode-icon">🌙</span>
+    </button>
 
   </header>
 
@@ -60,7 +86,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="">
+      <img src="assets/img/hero-bg.jpg" alt="Background image of Dr Rajan Nagarajan" loading="lazy" width="1920" height="1080">
 
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
@@ -93,7 +119,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Dr Rajan Nagarajan">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Portrait of Dr Rajan Nagarajan" loading="lazy" width="400" height="400">
           </div>
           <div class="col-lg-8 content">
             <h2>AI Product Manager | Fintech • Managed Security • EdTech • Analytics | M.Sc. Counselling Psych</h2>
@@ -332,7 +358,7 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="Portfolio App 1 screenshot" loading="lazy" width="600" height="400">
               <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
@@ -342,7 +368,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="Portfolio Product 1 screenshot" loading="lazy" width="600" height="400">
               <div class="portfolio-info">
                 <h4>Product 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
@@ -352,7 +378,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="Portfolio Branding 1 screenshot" loading="lazy" width="600" height="400">
               <div class="portfolio-info">
                 <h4>Branding 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
@@ -362,7 +388,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="Portfolio App 2 screenshot" loading="lazy" width="600" height="400">
               <div class="portfolio-info">
                 <h4>App 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
@@ -372,7 +398,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="Portfolio Product 2 screenshot" loading="lazy" width="600" height="400">
               <div class="portfolio-info">
                 <h4>Product 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
@@ -382,7 +408,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="Portfolio Branding 2 screenshot" loading="lazy" width="600" height="400">
               <div class="portfolio-info">
                 <h4>Branding 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
@@ -392,7 +418,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="Portfolio App 3 screenshot" loading="lazy" width="600" height="400">
               <div class="portfolio-info">
                 <h4>App 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
@@ -402,7 +428,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="Portfolio Product 3 screenshot" loading="lazy" width="600" height="400">
               <div class="portfolio-info">
                 <h4>Product 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
@@ -412,7 +438,7 @@
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="Portfolio Branding 3 screenshot" loading="lazy" width="600" height="400">
               <div class="portfolio-info">
                 <h4>Branding 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
@@ -429,13 +455,49 @@
 
     </section><!-- /Portfolio Section -->
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What people say about Dr Rajan Nagarajan</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <p class="card-text">“Rajan is a visionary product leader who brings clarity and focus to every project.”</p>
+                <h5 class="card-title">— Jane Doe, CTO, FinTech Co.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <p class="card-text">“His expertise in AI and analytics helped us transform our business.”</p>
+                <h5 class="card-title">— John Smith, CEO, EdTech Innovators</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <p class="card-text">“A true professional and a pleasure to work with.”</p>
+                <h5 class="card-title">— Priya Patel, Product Manager, Security Solutions</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>AI Product Management, Business Process Automation, and Analytics Consulting</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -451,9 +513,9 @@
                 <i class="bi bi-activity"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>AI Product Strategy</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Develop comprehensive AI product roadmaps, define success metrics, and create data-driven product strategies for FinTech and EdTech applications.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -466,9 +528,9 @@
                 <i class="bi bi-broadcast"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+                <h3>Process Automation</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Design and implement business process automation solutions using AI, BPM, and workflow optimization to reduce operational friction and increase efficiency.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -481,9 +543,9 @@
                 <i class="bi bi-easel"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
+                <h3>Analytics & Insights</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Build comprehensive analytics frameworks, create data visualization dashboards, and develop actionable insights to drive business decisions.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -496,9 +558,9 @@
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
+                <h3>Team Leadership</h3>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <p>Lead cross-functional AI teams, mentor product managers, and build high-performing organizations focused on innovation and results.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -512,9 +574,9 @@
                 <i class="bi bi-calendar4-week icon"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
+                <h3>Agile Delivery</h3>
               </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <p>Implement agile methodologies, optimize development cycles, and ensure timely delivery of high-quality AI products and features.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -528,9 +590,9 @@
                 <i class="bi bi-chat-square-text"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
+                <h3>Speaking & Consulting</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <p>Share insights on AI product management, organizational psychology, and business transformation through speaking engagements and consulting.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -667,7 +729,13 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
 </body>
 
 </html>

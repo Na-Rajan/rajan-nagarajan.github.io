@@ -1,0 +1,21 @@
+{
+  "name": "Dr Rajan Nagarajan Resume & Portfolio",
+  "short_name": "Rajan Resume",
+  "description": "Resume and portfolio of Dr Rajan Nagarajan, AI Product Manager and Author.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0563bb",
+  "icons": [
+    {
+      "src": "assets/img/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+} 

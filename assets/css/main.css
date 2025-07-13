@@ -27,6 +27,15 @@
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
+:root.dark-mode, .dark-mode {
+  --background-color: #181a1b;
+  --default-color: #f5f6fa;
+  --heading-color: #ffffff;
+  --accent-color: #4f8cff;
+  --surface-color: #23272a;
+  --contrast-color: #181a1b;
+}
+
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #45505b;  /* The default color of the main navmenu links */
@@ -75,6 +84,12 @@ a {
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 h1,
